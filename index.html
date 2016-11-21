@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+     <meta charset="UTF-8">
+    <title></title>
+</head>
+<link href="css/main.css" rel="stylesheet" type="text/css"/>
+<script src="JS/myfocus-2.0.1.min.js" type="text/javascript"></script>
+<script src="JS/mf-pattern/mF_YSlider.js" type="text/javascript"></script>
+<link   href="JS/mf-pattern/mF_YSlider.css" type="text/css"/>
+<body>
+
+<script type="text/javascript">
+    myFocus.set({
+        id:'picBox'
+    })
+</script>
+
+<div class="top">
+    <div class="content">
+        <ul>
+            <li> <a href="#"> 联系我们 </a> </li>
+            <li> <a href="#" onclick="AddFavorite(window.location,document.title)"> 加入收藏 </a> </li>
+            <li> <a href="#" onclick="setHome(window.location)"> 设为首页 </a> </li>
+        </ul>
+    </div>
+</div><!-- top结束 -->
+<div class="wrap">
+    <div class="logo">
+        <div class="logo_left">
+            <img src="images/logo.jpg" alt="慕课网"/>
+        </div>
+        <div class="logo_right">
+            <img src="images/tel.jpg" alt="服务热线"/> <span class="tel">24小时服务热线：1234567890</span>
+        </div>
+    </div><!-- logo结束 -->
+    <div class="nav">
+                <ul>
+                    <li> <a href="#">首页</a> </li>
+                    <li> <a href="#">关于慕课</a> </li>
+                    <li> <a href="index.html">新闻动态</a> </li>
+                    <li> <a href="index.html">新闻中心</a> </li>
+                    <li> <a href="index.html">在线课程</a> </li>
+                    <li> <a href="index.html">人才招聘</a> </li>
+                </ul>
+                <form action="" method="post">
+                    <input type="text" class="search_text"/>
+                </form>
+    </div><!-- nav结束 -->
+    <div class="ad" id="picBox">
+        <div class="loading">
+            <img src="images/loading.gif" alt="图片加载中"/>
+        </div>
+        <div class="pic">
+        <ul>
+            <li> <img src="images/ad2.jpg"/> </li>
+            <li> <img src="images/ad3.jpg"/> </li>
+            <li> <img src="images/ad4.jpg"/> </li>
+        </ul>
+        </div><!-- pic结束 -->
+    </div><!-- ad结束 -->
+    <div class="main">
+        <div class="news">
+            <div class="title">
+                    <h2 class="titleLeft">新闻中心</h2>
+                    <span class="titleRight">
+                        <a href="newsList.html" target="_self"> More&gt;&gt; </a>
+                    </span>
+            </div>
+            <div class="picNews">
+                <img src="images/news.jpg"/>
+                <h2> <a href="new.html"> 慕女神喊你来表白！</a> </h2>
+                <p>
+                    活动时间：5月20日——5月25日<br/>
+                    获奖公布时间：5月26日<br/>
+                    <a href="#"> Learn More&gt;&gt;</a>
+                </p>
+            </div>
+            <div class="newList">
+                <ul>
+                    <li> <span> 2014-6-1 </span> <a href="newsListInfo.html"> 【慕课访谈 用户篇】“有为屌丝”在路上 </a> </li>
+                    <li> <span> 2014-6-1 </span> <a href="newsListInfo.html"> 【有奖活动】 给父亲的三行书信 </a> </li>
+                    <li> <span> 2014-6-1 </span> <a href="newsListInfo.html"> 【程序猿 晒出你的童年】 活动获奖公告 </a> </li>
+                    <li> <span> 2014-6-1 </span> <a href="newsListInfo.html"> 【慕课访谈】破茧成蝶 美女程序员的蜕变史 </a> </li>
+                </ul>
+            </div>
+        </div><!-- news结束 -->
+        <div class="course">
+             <div class="title">
+                 <h2 class="titleLeft"> 课程中心 </h2>
+                 <span class="titleRight">
+                     <a href="#">More&gt;&gt;</a>
+                 </span>
+             </div>
+             <div class="picCourse">
+                 <img src="images/css.jpg"/>
+                 <h2> <a href="course.html"> css圆角进化论 </a> </h2>
+                 <p>
+                     css圆角的实现经历了三大发展阶段：背景标签模式；css2.0+html标签模拟；css3圆角属性。本案例详细解析了每种的实现方式;并...
+                 </p>
+             </div>
+             <div class="courseType">
+                 <ul>
+                     <li> <a href="#">&nbspPHP开发 </a> </li>
+                     <li> <a href="#">&nbsp前端开发 </a> </li>
+                     <li> <a href="#">&nbspJAVA开发 </a> </li>
+                     <li> <a href="#">&nbsp安卓开发 </a> </li>
+                 </ul>
+             </div>
+        </div><!-- course结束 -->
+        <div class="sidebar">
+             <div class="video">
+                 <div class="videoTitle">
+                     <h2 class="titleLeft"> 媒体聚焦  </h2>
+                 </div>
+                 <div class="videoContent">
+                     <embed src='http://player.youku.com/player.php/sid/XNzAwNjY1NjE2/v.swf' allowFullScreen='true'
+                            quality='high' width='230' height='140' align='middle' allowScriptAccess='always'
+                            type='application/x-shockwave-flash'></embed>
+                 </div>
+             </div>
+            <div class="videoAd">
+                <img src="images/app.jpg"/>
+            </div>
+        </div><!-- sidebar结束 -->
+    </div><!-- main结束 -->
+</div><!-- wrap结束 -->
+<div class="copyRight">
+    <div class="copyRightContent">
+        <ul class="copyRightContentUl">
+            <li> <a href="#"> 关于 </a>
+                 <ul>
+                     <li> <a href="#"> 品牌故事 </a> </li>
+                     <li> <a href="#"> 联系我们 </a> </li>
+                     <li> <a href="#"> 加入我们 </a> </li>
+                     <li> <a href="#"> 版权声明 </a> </li>
+                 </ul>
+            </li>
+            <li> <a href="#"> 课程 </a>
+                 <ul>
+                     <li> <a href="#"> PHP开发 </a> </li>
+                     <li> <a href="#"> 前端开发 </a> </li>
+                     <li> <a href="#"> Java开发 </a> </li>
+                     <li> <a href="#"> 安卓开发 </a> </li>
+                 </ul>
+            </li>
+            <li> <a href="#"> 关注 </a>
+                 <ul>
+                     <li> <a href="#"> 新浪微博 </a> </li>
+                     <li> <a href="#"> 腾讯微博 </a> </li>
+                     <li> <a href="#"> 企业微信 </a> </li>
+                     <li> <a href="#"> QQ空间 </a> </li>
+                 </ul>
+            </li>
+            <li> <a href="#"> 留言 </a>
+                 <ul>
+                     <li> <a href="#"> 意见反馈 </a> </li>
+                     <li> <a href="#"> 问题留言 </a> </li>
+                     <li> <a href="#"> 媒体联络 </a> </li>
+                     <li> <a href="#"> 在线客服 </a> </li>
+                 </ul>
+            </li>
+            <li> <span> <img src="images/weixin.png"/>微信关注 </span>
+                 <img src="images/qrcode.jpg"/>
+            </li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>
